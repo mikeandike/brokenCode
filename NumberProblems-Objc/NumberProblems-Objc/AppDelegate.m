@@ -19,8 +19,20 @@
 
     // Insert code here...
     
+    //See questionable line below. Note, header is home to the declaration for iterateCounter
+    [AppDelegate iterateCounter:4];
+    
     
     return YES;
+}
+
+-(void)iterateCounter:(int)number
+{
+    NSLog(@"Iterate %d", number);
+    if (number > 0) {
+        number--;
+        [AppDelegate iterateCounter:number];
+    }
 }
 
 @end
