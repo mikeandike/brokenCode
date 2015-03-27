@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+static int multiple = 8;
+static float divisor = 6;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 -(void)iterateCounter:(int)number;
+-(int)multiplied:(int)number;
 
 @end
 
